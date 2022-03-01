@@ -13,8 +13,8 @@ public class Producer {
     private final JmsTemplate jmsTemplate;
 
     public void sendMessage(final String queueName, final String message) {
-        log.info("Sending {} to {} queue.", message, queueName);
+        log.info("Sending {} to {}", message, queueName);
         jmsTemplate.convertAndSend(queueName, message);
-        log.info("{} successfully sent to {} queue.", message, queueName);
+        log.info("{} successfully sent to {}", message, queueName);
     }
 }
