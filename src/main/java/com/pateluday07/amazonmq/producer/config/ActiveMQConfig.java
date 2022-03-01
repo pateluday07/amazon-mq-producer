@@ -22,7 +22,7 @@ public class ActiveMQConfig {
     public ActiveMQConnectionFactory connectionFactory() {
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(brokerUrl);
         connectionFactory.setUser(user);
-        connectionFactory.setUser(password);
+        connectionFactory.setPassword(password);
         return connectionFactory;
     }
 
