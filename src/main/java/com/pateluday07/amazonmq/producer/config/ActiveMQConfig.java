@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.core.JmsTemplate;
 
 @Configuration
-@Log4j2
 public class ActiveMQConfig {
 
     @Value("${artemis.broker-url}")
