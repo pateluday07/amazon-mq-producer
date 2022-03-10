@@ -1,9 +1,5 @@
 server:
   port: 8080
 
-artemis:
-  broker-url: tcp://localhost:61616
-  user: admin
-  password: admin
-  queue:
-    demo: DemoQueue
+spring:
+  profiles.active: dev
