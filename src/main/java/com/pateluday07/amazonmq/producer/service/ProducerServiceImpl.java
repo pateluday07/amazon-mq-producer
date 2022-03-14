@@ -16,7 +16,7 @@ import org.springframework.web.server.ResponseStatusException;
 @RequiredArgsConstructor
 public class ProducerServiceImpl implements ProducerService {
 
-    @Value("${artemis.queue.demo}")
+    @Value("${activemq.queue.demo}")
     private String demoQueue;
 
     private final ObjectMapper objectMapper = new ObjectMapper();

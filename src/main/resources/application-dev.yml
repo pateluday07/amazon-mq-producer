@@ -1,4 +1,4 @@
-artemis:
+activemq:
   broker-url: tcp://localhost:61616
   user: admin
   password: admin

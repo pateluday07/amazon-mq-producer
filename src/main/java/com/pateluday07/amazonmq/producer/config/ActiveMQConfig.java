@@ -9,11 +9,11 @@ import org.springframework.jms.core.JmsTemplate;
 @Configuration
 public class ActiveMQConfig {
 
-    @Value("${artemis.broker-url}")
+    @Value("${activemq.broker-url}")
     private String brokerUrl;
-    @Value("${artemis.user}")
+    @Value("${activemq.user}")
     private String user;
-    @Value("${artemis.password}")
+    @Value("${activemq.password}")
     private String password;
 
     @Bean
